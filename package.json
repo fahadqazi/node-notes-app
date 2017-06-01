@@ -18,5 +18,8 @@
   "homepage": "https://github.com/fahadqazi/node-notes-app#readme",
   "dependencies": {
     "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "yargs": "^4.7.1"
   }
 }
