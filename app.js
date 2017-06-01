@@ -7,11 +7,11 @@ const yargs = require('yargs');
 const notes = require('./notes.js');
 
 const argv = yargs.argv;
-var command = process.argv[2];
-
+// var command = process.argv[2];
+const command = argv._[0]
 // console.log('Process: ', process.argv);  //argv = arguments vector
 console.log('Yargs: ', argv);
-
+console.log("You called the function: ", argv._[0])
 
 
 if (command === 'add'){
