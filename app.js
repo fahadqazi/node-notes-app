@@ -15,7 +15,14 @@ console.log("You called the function: ", argv._[0])
 
 
 if (command === 'add'){
-    notes.addNote(argv.title, argv.body);
+    var note = notes.addNote(argv.title, argv.body);
+    if (note){
+        console.log('~Note Created~');
+        console.log("Title: ", argv.title);
+        console.log("Body: " , argv.body);
+    } else {
+        console.log("*Note title take..*")
+    }
 } else if (command === 'list'){
     notes.getAll();
 } else if (command === 'read'){
